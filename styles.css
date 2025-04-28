@@ -5,10 +5,30 @@ body {
   background-color: #f9f9f9;
   color: #333;
   display: flex;
+  flex-direction: column;
 }
 
 h1, h2, p, button {
   font-family: 'Fredoka One', cursive;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #4169e1;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
 }
 
 /* Sidebar */
@@ -81,7 +101,9 @@ h1, h2, p, button {
   margin: 0.5rem 0 0;
   border-radius: 5px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .dropdown-content li {
