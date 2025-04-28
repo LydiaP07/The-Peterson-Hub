@@ -21,6 +21,11 @@ h1, h2, p, button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .header h1 {
   margin: 0;
   font-size: 2.5rem;
@@ -103,16 +108,19 @@ h1, h2, p, button {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.8s ease, opacity 0.8s ease; /* Slower animation */
 }
 
 .dropdown-content li {
   margin: 0;
+  font-size: 0.9rem; /* Smaller submenus */
+  padding-left: 1rem; /* Indent submenu items */
 }
 
 .dropdown-content button {
   background-color: #ffffff;
   color: #4a90e2;
+  font-size: 0.9rem; /* Smaller font size for submenu buttons */
 }
 
 .dropdown-content button:hover {
