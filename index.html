@@ -23,9 +23,14 @@
       <img src="logo.png" alt="Peterson Hub Logo">
     </div>
 
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." id="sidebar-search">
+    </div>
+
     <!-- Navigation Links -->
     <ul>
-      <li><button onclick="navigateTo('home')">Home</button></li>
+      <li class="active"><button onclick="navigateTo('home')">Home</button></li>
       <li class="dropdown">
         <button class="dropdown-btn">Walk with God</button>
         <ul class="dropdown-content">
@@ -46,11 +51,7 @@
         <button class="dropdown-btn">Car Tracker</button>
         <ul class="dropdown-content">
           <li><button onclick="navigateTo('map')">Map</button></li>
-          <li><button onclick="navigateTo('toyota')">Toyota</button></li>
-          <li><button onclick="navigateTo('dodge')">Dodge</button></li>
-          <li><button onclick="navigateTo('chrysler')">Chrysler</button></li>
-          <li><button onclick="navigateTo('subaru')">Subaru</button></li>
-          <li><button onclick="navigateTo('buick')">Buick</button></li>
+          <li><button onclick="navigateTo('maintenance')">Maintenance Reminders</button></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -62,6 +63,7 @@
         </ul>
       </li>
       <li><button onclick="navigateTo('daily-verse')">Daily Verse</button></li>
+      <li><button onclick="navigateTo('calendar')">Family Calendar</button></li>
     </ul>
   </aside>
 
